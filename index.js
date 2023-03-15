@@ -48,7 +48,7 @@ const loadQuiz = async () => {
   const res = await fetch("./data/quiz.json");
   const data = await res.json();
   quizData = data;
-  displayQuiz(data);
+  displayQuiz(data);                                                                                          
 };
 
 
@@ -184,3 +184,8 @@ document.querySelector("#submit").addEventListener("click", () => {
   }, 1500);
   window.scrollTo(0, 0);
 });
+
+
+document.getElementById('blog-button').addEventListener('click', function(){
+  location.href  = "quiz.html"
+})
