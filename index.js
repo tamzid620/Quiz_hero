@@ -54,7 +54,7 @@ const loadQuiz = async () => {
 
 // Displaying quiz on quiz page
 const displayQuiz = (data) => {
-  if (data) {
+  if (!data) {
     quizContainer.innerHTML = "";
     return;
   }
